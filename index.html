@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Gym Recommender Bootstrap</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--------------------------------------
+Created by: Esther Brown & Sydney Leavitt
+UNA CIS 470 Fall 2020 Term Project
+---------------------------------------->
+<section class="py-5 header text-center text-white">
+  <div class="container pt-4">
+    <header>
+      <h1 class="display-4">Fitness Recommender</h1>
+      <p class="font-italic mb-1">Find a fitness routine perfect for you!</p>
+      <p class="font-italic"> Check out the source code on
+        <a class="text- text-white" href="https://github.com/esthergiles/gymRecommender">
+          <u>Github.</u>
+        </a>
+      </p>
+    </header>
+  </div>
+</section>
+
+<section>
+  <form>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 mx-auto">
+        <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <h2 class="h4 mb-1">What are your specific fitness goals?</h2>
+            <p class="small text-muted font-italic mb-4">Choose all that apply.</p>
+            <ul class="list-group">
+              <li class="list-group-item rounded-0">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck1" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck1">Weight Loss</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck2" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck2">Strengthening/Toning</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck3" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck3">Mobility & Increasing Flexibility</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck4" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck4">Health Related Fitness</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <h2 class="h4 mb-1">How often would you like to exercise per week?</h2>
+            <p class="small text-muted font-italic mb-4">Select from the drop down menu.</p>
+            <!--TO DO: Add Drop down menu -->
+            <!--             <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Times Per Week
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">1</a>
+                <a class="dropdown-item" href="#">2</a>
+                <a class="dropdown-item" href="#">3</a>
+                <a class="dropdown-item" href="#">4</a>
+                <a class="dropdown-item" href="#">5</a>
+                <a class="dropdown-item" href="#">6</a>
+                <a class="dropdown-item" href="#">7</a>
+              </div>
+            </div> -->
+            <select class="browser-default custom-select">
+              <option selected>Open this select menu</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <h2 class="h4 mb-1">What is your desired activity level?</h2>
+            <p class="small text-muted font-italic mb-4">Choose all that apply.</p>
+            <ul class="list-group">
+              <li class="list-group-item rounded-0">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck5" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck5">Easy</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck6" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck6">Moderate</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck7" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck7">Low Impact</label>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck8" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck8">High Intensity</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <h2 class="h4 mb-1">Have you had a fitness membership before?</h2>
+
+            <ul class="list-group">
+              <li class="list-group-item rounded-0 d-flex align-items-center justify-content-between">
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" id="customRadio1" type="radio" name="customRadio">
+                  <label class="custom-control-label" for="customRadio1">
+                    <p class="mb-0">Yes</p>
+                  </label>
+                </div>
+                <!--                 <label for="customRadio1"><img src="https://res.cloudinary.com/mhmd/image/upload/v1579682182/2_rqo4zs.gif" alt="" width="60"></label> -->
+              </li>
+              <li class="list-group-item d-flex align-items-center justify-content-between">
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" id="customRadio2" type="radio" name="customRadio">
+                  <label class="custom-control-label" for="customRadio2">
+                    <p class="mb-0">No</p>
+                  </label>
+                </div>
+                <!--                 <label for="customRadio2"><img src="https://res.cloudinary.com/mhmd/image/upload/v1579682182/1_ezgo0i.png" alt="" width="60"></label> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--         . <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <h2 class="h4 mb-1">Are you interested in taking Group Exercise classes?</h2>
+
+            <ul class="list-group">
+              <li class="list-group-item rounded-0 d-flex align-items-center justify-content-between">
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" id="customRadio3" type="radio" name="customRadio">
+                  <label class="custom-control-label" for="customRadio3">
+                    <p class="mb-0">Yes</p>
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item d-flex align-items-center justify-content-between">
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" id="customRadio4" type="radio" name="customRadio">
+                  <label class="custom-control-label" for="customRadio4">
+                    <p class="mb-0">No</p>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> 
+-->
+        <!-- This needs to remain hidden unless user selects yes to wanting to participate in group exercise -->
+
+        <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <h2 class="h4 mb-1">What Group Exercise classes would you be interested in taking?</h2>
+            <p class="small text-muted font-italic mb-4">Choose all that apply.</p>
+            <ul class="list-group">
+              <li class="list-group-item rounded-0">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck9" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck9">Cycling</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck10" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck10">Yoga</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck11" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck11">High Intensity Training</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck12" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck12">Step Cardio</label>
+                </div>
+              </li>
+              <!-- TO DO: potential improvement add none box, if none is selected others get greyed out -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <h2 class="h4 mb-1">What types of equipment are you interested in using? </h2>
+            <p class="small text-muted font-italic mb-4">Choose all that apply.</p>
+            <ul class="list-group">
+              <li class="list-group-item rounded-0">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck13" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck13">Cardio (Treadmill, Elliptical, StairMaster, ect.)</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck14" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck14">Free Weights</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck15" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck15">Indoor Track</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck16" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck16">Swimming</label>
+                </div>
+              </li>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck17" type="checkbox">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck17">Cable Machines</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- End of Cards-->
+  </form>
+  <button onclick="SubForm()">Submit</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

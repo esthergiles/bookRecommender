@@ -1,0 +1,18 @@
+/*****************************************
+Created by: Esther Brown & Sydney Leavitt
+UNA CIS 470 Fall 2020 Term Project
+CSS From Bootstrap
+https://bootstrapious.com/p/bootstrap-checkbox-list
+*****************************************/
+
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+body {
+    background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
