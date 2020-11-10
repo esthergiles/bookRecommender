@@ -15,3 +15,5 @@ function SubForm (){
           alert("There was an error :(")
         }
     });
+    }
+</script>
