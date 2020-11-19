@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Fitness Recommender</title>
+
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
@@ -28,10 +29,17 @@ UNA CIS 470 Fall 2020 Term Project
 </section>
 
 <section>
-  <form>
+  <form class="form">
   <div class="container">
     <div class="row">
       <div class="col-lg-7 mx-auto">
+        <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <label for="name" class="cursor-pointer font-italic">Full Name:</label><br>
+            <input type="text" id="name" name="Full Name"><br>
+          </div>
+        </div>
+
         <div class="card shadow border-0 mb-5">
           <div class="card-body p-5">
             <h2 class="h4 mb-1">What are your specific fitness goals?</h2>
@@ -39,26 +47,26 @@ UNA CIS 470 Fall 2020 Term Project
             <ul class="list-group">
               <li class="list-group-item rounded-0">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck1" type="checkbox" name="customCheck1" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck1">Weight Loss</label>
+                  <input class="custom-control-input" id="Weight-Loss" type="checkbox" name="Weight-Loss" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Weight-Loss">Weight Loss</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck2" type="checkbox" name="customCheck2" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck2">Strengthening/Toning</label>
+                  <input class="custom-control-input" id="Strengthening/Toning" type="checkbox" name="Strengthening/Toning" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Strengthening/Toning">Strengthening/Toning</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck3" type="checkbox" name="customCheck3" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck3">Mobility & Increasing Flexibility</label>
+                  <input class="custom-control-input" id="Mobility-Increasing-Flexibility" type="checkbox" name="Mobility-Increasing-Flexibility" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Mobility-Increasing-Flexibility">Mobility & Increasing Flexibility</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck4" type="checkbox" name="customCheck4" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck4">Health Related Fitness</label>
+                  <input class="custom-control-input" id="Health-Related-Fitness" type="checkbox" name="Health-Related-Fitness" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Health-Related-Fitness">Health Related Fitness</label>
                 </div>
               </li>
             </ul>
@@ -84,15 +92,15 @@ UNA CIS 470 Fall 2020 Term Project
                 <a class="dropdown-item" href="#">7</a>
               </div>
             </div> -->
-            <select class="browser-default custom-select">
-              <option selected>Open this select menu</option>
-              <option name="1day" value="1">1</option>
-              <option name="2day" value="2">2</option>
-              <option name="3day" value="3">3</option>
-              <option name="4day" value="4">4</option>
-              <option name="5day" value="5">5</option>
-              <option name="6day" value="6">6</option>
-              <option name="7day" value="7">7</option>
+            <select class="browser-default custom-select" name="Exercise-Count">
+              <option selected value="0">Open this select menu</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
             </select>
           </div>
         </div>
@@ -104,27 +112,27 @@ UNA CIS 470 Fall 2020 Term Project
             <ul class="list-group">
               <li class="list-group-item rounded-0">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck5" type="checkbox" name="customCheck5" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck5">Easy</label>
+                  <input class="custom-control-input" id="Easy" type="checkbox" name="Easy" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Easy">Easy</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck6" type="checkbox" name="customCheck6" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck6">Moderate</label>
+                  <input class="custom-control-input" id="Moderate" type="checkbox" name="Moderate" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Moderate">Moderate</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck7" type="checkbox" name="customCheck7" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck7">Low Impact</label>
+                  <input class="custom-control-input" id="Low-Impact" type="checkbox" name="Low-Impact" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Low-Impact">Low Impact</label>
                 </div>
               </li>
 
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck8" type="checkbox" name="customCheck8" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck8">High Intensity</label>
+                  <input class="custom-control-input" id="High-Intensity" type="checkbox" name="High-Intensity" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="High-Intensity">High Intensity</label>
                 </div>
               </li>
             </ul>
@@ -138,8 +146,8 @@ UNA CIS 470 Fall 2020 Term Project
             <ul class="list-group">
               <li class="list-group-item rounded-0 d-flex align-items-center justify-content-between">
                 <div class="custom-control custom-radio">
-                  <input class="custom-control-input" id="customRadio1" type="radio" name="customRadio" value ="yes">
-                  <label class="custom-control-label" for="customRadio1">
+                  <input class="custom-control-input" id="Prior-Membership-Yes" name="PriorMembership" type="radio" value="Yes">
+                  <label class="custom-control-label" for="Prior-Membership-Yes">
                     <p class="mb-0">Yes</p>
                   </label>
                 </div>
@@ -147,8 +155,8 @@ UNA CIS 470 Fall 2020 Term Project
               </li>
               <li class="list-group-item d-flex align-items-center justify-content-between">
                 <div class="custom-control custom-radio">
-                  <input class="custom-control-input" id="customRadio2" type="radio" name="customRadio" value="no">
-                  <label class="custom-control-label" for="customRadio2">
+                  <input class="custom-control-input" id="Prior-Membership-No" name="PriorMembership" type="radio" value="No">
+                  <label class="custom-control-label" for="Prior-Membership-No">
                     <p class="mb-0">No</p>
                   </label>
                 </div>
@@ -157,6 +165,7 @@ UNA CIS 470 Fall 2020 Term Project
             </ul>
           </div>
         </div>
+
 
         <!--         . <div class="card shadow border-0 mb-5">
           <div class="card-body p-5">
@@ -192,26 +201,26 @@ UNA CIS 470 Fall 2020 Term Project
             <ul class="list-group">
               <li class="list-group-item rounded-0">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck9" type="checkbox" name="customCheck9" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck9">Cycling</label>
+                  <input class="custom-control-input" id="Cycling" type="checkbox" name="Cycling" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Cycling">Cycling</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck10" type="checkbox" name="customCheck10" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck10">Yoga</label>
+                  <input class="custom-control-input" id="Yoga" type="checkbox"name="Yoga" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Yoga">Yoga</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck11" type="checkbox" name="customCheck11" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck11">High Intensity Training</label>
+                  <input class="custom-control-input" id="HIT" type="checkbox"name="HIT" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="HIT">High Intensity Training</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck12" type="checkbox" name="customCheck12" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck12">Step Cardio</label>
+                  <input class="custom-control-input" id="Step-Cardio" type="checkbox"name="Step-Cardio" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Step-Cardio">Step Cardio</label>
                 </div>
               </li>
               <!-- TO DO: potential improvement add none box, if none is selected others get greyed out -->
@@ -226,33 +235,33 @@ UNA CIS 470 Fall 2020 Term Project
             <ul class="list-group">
               <li class="list-group-item rounded-0">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck13" type="checkbox" name="customCheck13" value=1>
+                  <input class="custom-control-input" id="customCheck13" type="checkbox" name="Cardio" value="1">
                   <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck13">Cardio (Treadmill, Elliptical, StairMaster, ect.)</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck14" type="checkbox" name="customCheck14" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck14">Free Weights</label>
+                  <input class="custom-control-input" id="Free-Weights" type="checkbox" name="Free-Weights" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Free-Weights">Free Weights</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck15" type="checkbox" name="customCheck15" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck15">Indoor Track</label>
+                  <input class="custom-control-input" id="Indoor-Track" type="checkbox" name="Indoor-Track" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Indoor-Track">Indoor Track</label>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck16" type="checkbox" name="customCheck16" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck16">Swimming</label>
+                  <input class="custom-control-input" id="Swimming" type="checkbox" name="Swimming" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Swimming">Swimming</label>
                 </div>
               </li>
               </li>
               <li class="list-group-item">
                 <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheck17" type="checkbox" name="customCheck17" value=1>
-                  <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck17">Cable Machines</label>
+                  <input class="custom-control-input" id="Cable-Machines" type="checkbox" name="Cable-Machines" value="1">
+                  <label class="cursor-pointer font-italic d-block custom-control-label" for="Cable-Machines">Cable Machines</label>
                 </div>
               </li>
             </ul>
@@ -261,14 +270,21 @@ UNA CIS 470 Fall 2020 Term Project
 
         <!-- End of Cards-->
   </form>
-  <button onclick="SubForm()">Submit</button>
+  <div>
+  <!-- <button onclick="SubForm()">Submit</button> -->
+  <button class="contact-form__button" type="submit">Get Results!</button>
+</div>
       </div>
     </div>
   </div>
 </section>
+<div class="results">
+  <h2 class="results__heading">Form Data</h2>
+  <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+</div>
 <!-- partial -->
   <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script><script  src="script.js"></script>
+  <script  src="script.js"></script>
 
 </body>
 </html>
