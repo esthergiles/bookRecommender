@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Recommender</title>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--------------------------------------
+Created by: Esther Brown & Sydney Leavitt
+UNA CIS 470 Fall 2020 Term Project
+---------------------------------------->
+<section class="py-5 header text-center text-white">
+  <div class="container pt-4">
+    <header>
+      <h1 class="display-4">Book Recommender</h1>
+      <p class="font-italic mb-1">Are you in search of a good book? Tell us what you like, and we will recommend you a new title using the power of AI.</p>
+      <p class="font-italic"> Check out the source code on
+        <a class="text- text-white" href="https://github.com/esthergiles/gymRecommender">
+          <u>Github.</u>
+        </a>
+      </p>
+    </header>
+  </div>
+</section>
+
+<section>
+  <form class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 mx-auto">
+        <div class="card shadow border-0 mb-5">
+          <div class="card-body p-5">
+            <h2 class="h4 mb-1">Tell us what you thought of the following books:</h2>
+            <p class="small text-muted font-italic mb-4">Only select ratings for books you have read.</p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" id="Book1" type="checkbox" name="The-Great-Gatsby" value="The Great Gatsby">
+                      <label class="cursor-pointer font-italic" for="The Great Gatsby">The Great Gatsby</label>
+                      <select class="browser-default custom-select" name="The Greats Gatsby Rating" id="Book1-Rating">
+                        <option selected value="0">Rating</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                  </select>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="Book2" type="checkbox" name="Wuthering Heights" value="Wuthering Heights">
+                  <label class="cursor-pointer font-italic" for="Wuthering Heights">Wuthering Heights</label>
+                  <select class="browser-default custom-select" name="Wuthering Heights Rating" id="Book2-Rating">
+                    <option selected value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+              </select>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="Book3" type="checkbox" name="Lolita" value="Lolita">
+                  <label class="cursor-pointer font-italic" for="Lolita">Lolita</label>
+                  <select class="browser-default custom-select" name="Lolita Rating" id="Book3-Rating">
+                    <option selected value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+              </select>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="Book4" type="checkbox" name="Nineteen Eighty Four" value="Nineteen Eighty Four">
+                  <label class="cursor-pointer font-italic" for="Nineteen Eighty Four">Nineteen Eighty Four</label>
+                  <select class="browser-default custom-select" name="Nineteen Eighty Four Rating" id="Book4-Rating">
+                    <option selected value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+              </select>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="Book5" type="checkbox" name="The Sound and the Fury" value="The Sound and the Fury">
+                  <label class="cursor-pointer font-italic" for="The Sound and the Fury">The Sound and the Fury</label>
+                  <select class="browser-default custom-select" name="The Sound and the Fury Rating" id="Book5-Rating">
+                    <option selected value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+              </select>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="Book6" type="checkbox" name="The Adventures of Huckleberry Finn" value="The Adventures of Huckleberry Finn">
+                  <label class="cursor-pointer font-italic" for="The Adventures of Huckleberry Finn">The Adventures of Huckleberry Finn</label>
+                  <select class="browser-default custom-select" name="The Adventures of Huckleberry Finn" id="Book6-Rating">
+                    <option selected value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+              </select>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="Book7" type="checkbox" name="Heart of Darkness" value="Heart of Darkness">
+                  <label class="cursor-pointer font-italic" for="Heart of Darkness">Heart of Darkness</label>
+                  <select class="browser-default custom-select" name="Heart of Darkness Rating" id="Book7-Rating">
+                    <option selected value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+              </select>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="Book8" type="checkbox" name="Moby Dick" value="Moby Dick">
+                  <label class="cursor-pointer font-italic" for="Moby Dick">Moby Dick</label>
+                  <select class="browser-default custom-select" name="Moby Dick Rating" id="Book8-Rating">
+                    <option selected value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+              </select>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="Book9" type="checkbox" name="Beloved" value="Beloved">
+                  <label class="cursor-pointer font-italic" for="Beloved">Beloved</label>
+                  <select class="browser-default custom-select" name="Beloved Rating" id="Book9-Rating">
+                    <option selected value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+              </select>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+<!-- TO DO Add ability to add rating-->
+        <!-- End of Cards-->
+  </form>
+  <div>
+  <button class="contact-form__button" id="submit">Get Results!</button>
+</div>
+<section class="py-5 header text-center text-white">
+  <div class="container pt-4">
+      <h1 class="display-4">Need a Refresher?</h1>
+      <p class="font-italic mb-1">Has it been a while since you've read one of these? Ask our chatbot questions like:</p>
+      <p class="font-italic">  "What is the plot of Lolita?" or "Who are the main characters of Moby Dick?"
+      </p>
+  <iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/c5ed06df-d061-4a1d-af65-8c269cffcb39">
+</iframe>
+  </div>
+</section>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <div class="results">
+  <h2 class="results__heading">Form Data</h2>
+  <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+</div> -->
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+
+</body>
+<footer> 
+  <div class="text-center py-3">Created by: Esther Brown & Sydney Leavitt 2020
+    <a href="https://github.com/esthergiles/gymRecommender"> Github Source Code</a>
+  </div>
+</footer>
+</html>
+
+<!-- python book_recommender.py --user "New User" -->

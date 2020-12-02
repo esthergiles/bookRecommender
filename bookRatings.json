@@ -1,0 +1,60 @@
+{
+  "John Smith": {
+    "Pride and Prejudice": 4,
+    "The Great Gatsby": 4.5,
+    "Moby Dick": 3,
+    "Lolita": 4.5,
+    "The Adventures of Huckleberry Finn": 1
+  },
+  "Brenda Peterson": {
+    "The Great Gatsby": 3,
+    "Wuthering Heights": 1.5,
+    "Lolita": 1,
+    "Nineteen Eighty Four": 2,
+    "The Sound and the Fury": 5,
+    "The Adventures of Huckleberry Finn": 4.5
+  },
+  "Bill Duffy": {
+    "Wuthering Heights": 4.5,
+    "Nineteen Eighty Four": 5,
+    "The Sound and the Fury": 4.5,
+    "Heart of Darkness": 1
+  },
+  "Samuel Miller": {
+    "The Great Gatsby": 3.5,
+    "Moby Dick": 5,
+    "Nineteen Eighty Four": 1,
+    "The Sound and the Fury": 5,
+    "Heart of Darkness": 1
+  },
+  "Julie Hammel": {
+    "Lolita": 2.5,
+    "Heart of Darkness": 4.5,
+    "The Adventures of Huckleberry Finn": 3
+  },
+  "Clarissa Jackson": {
+    "Beloved": 5,
+    "Wuthering Heights": 4.5,
+    "Lolita": 4,
+    "Goodfellas": 2.5,
+    "Heart of Darkness": 1,
+    "Nineteen Eighty Four": 1.5
+  },
+  "Adam Cohen": {
+    "The Great Gatsby": 3.5,
+    "Wuthering Heights": 3,
+    "The Sound and the Fury": 1,
+    "Lolita": 4.5,
+    "Nineteen Eighty Four": 3
+  },
+  "Chris Duncan": {
+    "Heart of Darkness": 1.5,
+    "Nineteen Eighty Four": 4.5
+  },
+  "New User": {
+  "The Great Gatsby": 8,
+  "Nineteen Eighty Four": 1,
+  "Wuthering Heights": 8,
+  "Lolita": 10
+  }
+}
