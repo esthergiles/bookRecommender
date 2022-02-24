@@ -1,6 +1,6 @@
 # gymRecommender
 Final Project for UNA CS 470 Fall 2019
-This is a web application that uses AI to provide boook recommendations based on user's input.
+This is a web application that uses AI to provide recommendations based on user's input. 
 --------------------------------------------------------------
 Code is super buggy, I wrote this long before I knew ANYTHING about server-side programming. 
 It was mainly a project to get some hands on experience using Python's AI Modules, but I really wanted to play around with node and the thought of a web application.
