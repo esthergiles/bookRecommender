@@ -1,4 +1,4 @@
-# gymRecommender
+# bookRecommender
 Final Project for UNA CS 470 Fall 2019
 This is a web application that uses AI to provide recommendations based on user's input. 
 --------------------------------------------------------------
